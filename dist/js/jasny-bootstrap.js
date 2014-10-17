@@ -962,7 +962,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
       var element = this.$element
 
       reader.onload = function(re) {
-        var $img = $('<img>')
+        var $img = $('<img> id="preview_image"')
         $img[0].src = re.target.result
         files[0].result = re.target.result
         
